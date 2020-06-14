@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        .wrapper {
+            height: 25px;
+            display: block;
+            background-color: black;
+            text-align: center;
+        }
+        
+        .sub {
+            width: 300px;
+            float: right;
+        }
+        
+        .sub1 {
+            width: 50px;
+            float: left;
+        }
+        
+        .sub2 {
+            width: 100px;
+            float: left;
+            color: white;
+            font-size: 15px;
+            margin-top: 1px;
+        }
+        
+        .sub3 {
+            width: 50px;
+            float: left;
+            top: auto;
+        }
+        
+        .sub4 {
+            width: 10px;
+            float: left;
+        }
+        
+        .sub5 {
+            width: 50px;
+            float: left;
+        }
+        
+        .bs li a {
+            font-size: 18px;
+        }
+        /* 设置鼠标画上去效果 */
+        
+        #bsa1:hover {
+            border-bottom: 3px solid rgb(232, 66, 10);
+            color: rgb(232, 66, 10);
+        }
+        
+        #bsa2:hover {
+            border-bottom: 4px solid rgb(232, 66, 10);
+            color: rgb(232, 66, 10);
+        }
+        
+        #bsa3:hover {
+            border-bottom: 4px solid rgb(232, 66, 10);
+            color: rgb(232, 66, 10);
+        }
+        
+        #bsa4:hover {
+            border-bottom: 4px solid rgb(232, 66, 10);
+            color: rgb(232, 66, 10);
+        }
+        
+        @media screen and (min-width: 991px) {
+            .wrapper {
+                display: block;
+            }
+            .btn1 {
+                display: none;
+                margin-left: 450px;
+                margin-top: -43px;
+            }
+            .bs li a {
+                margin-left: 30px;
+            }
+            .img-logo {
+                margin-right: 50px;
+                margin-left: 100px;
+            }
+            /* 响应式图片+内联表单  */
+            .banner-text1 {
+                display: block;
+            }
+            .banner-text2 {
+                display: none;
+            }
+            /* .form-inline {
+                width: 300px;
+                margin-left: 380px;
+            }
+            #imgPosition2 {
+                width: 60px;
+            } */
+            /* 接送 */
+            .ve-trans1 {
+                display: block;
+            }
+            .ve-trans2 {
+                display: none;
+            }
+            /* 热门线路标题 */
+            .routes1 {
+                display: block;
+            }
+            .routes2 {
+                display: none;
+            }
+            /* 热门线路介绍 */
+            .prompt-text1 {
+                display: block;
+            }
+            .prompt-text11 {
+                display: none;
+            }
+            .prompt-text22 {
+                display: block;
+            }
+            .prompt-text3 {
+                display: none;
+            }
+            /* 使命与愿景标题 */
+            .except1 {
+                display: block;
+            }
+            .except2 {
+                display: none;
+            }
+            /* 使命与愿景介绍 */
+            .advantages1 {
+                display: block;
+            }
+            .advantages2 {
+                display: none;
+            }
+            .advantages3 {
+                display: block;
+            }
+            .advantages4 {
+                display: none;
+            }
+            /* 底部 */
+            .black-bottom1 {
+                display: none;
+            }
+            .black-bottom2 {
+                display: block;
+            }
+        }
+        
+        @media screen and (min-width:770px) and (max-width: 990px) {
+            .wrapper {
+                display: block;
+            }
+            .btn1 {
+                display: none;
+                margin-left: 450px;
+                margin-top: -43px;
+            }
+            .bs li a {
+                margin-left: 20px;
+            }
+            .img-logo {
+                margin-right: 0px;
+                margin-left: 15 px;
+            }
+            /* 响应式图片+内联表单  */
+            .banner-text1 {
+                display: block;
+            }
+            .banner-text2 {
+                display: none;
+            }
+            /* .form-inline {
+                width: 250px;
+                margin-left: 250px;
+            }
+            #imgPosition2 {
+                width: 40px;
+            } */
+            /* 接送 */
+            .ve-trans1 {
+                display: none;
+            }
+            .ve-trans2 {
+                display: block;
+            }
+            /* 热门线路标题 */
+            .routes1 {
+                display: none;
+            }
+            .routes2 {
+                display: block;
+            }
+            /* 热门线路介绍 */
+            .prompt-text1 {
+                display: block;
+            }
+            .prompt-text11 {
+                display: none;
+            }
+            .prompt-text22 {
+                display: block;
+            }
+            .prompt-text3 {
+                display: none;
+            }
+            /* 使命与愿景标题 */
+            .except1 {
+                display: none;
+            }
+            .except2 {
+                display: block;
+            }
+            /* 使命与愿景介绍 */
+            .advantages1 {
+                display: none;
+            }
+            .advantages2 {
+                display: block;
+            }
+            .advantages3 {
+                display: none;
+            }
+            .advantages4 {
+                display: block;
+            }
+            /* 底部 */
+            .black-bottom1 {
+                display: block;
+            }
+            .black-bottom2 {
+                display: none;
+            }
+        }
+        
+        @media screen and (max-width: 769px) and (min-width: 650px) {
+            .wrapper {
+                display: none;
+            }
+            .btn1 {
+                display: block;
+                margin-left: 420px;
+                margin-top: -43px;
+            }
+            .img-logo {
+                margin-right: 0px;
+                margin-left: 15px;
+            }
+            /* 响应式图片+内联表单  */
+            .banner-text1 {
+                display: block;
+            }
+            .banner-text2 {
+                display: none;
+            }
+            /* .formSearch {
+                width: 200px;
+                margin-left: 200px;
+            }
+            #imgPosition2 {
+                width: 30px;
+            } */
+            /* 接送 */
+            .ve-trans1 {
+                display: none;
+            }
+            .ve-trans2 {
+                display: block;
+            }
+            /* 热门线路标题 */
+            .routes1 {
+                display: none;
+            }
+            .routes2 {
+                display: block;
+            }
+            /* 热门线路介绍 */
+            .prompt-text1 {
+                display: block;
+            }
+            .prompt-text11 {
+                display: none;
+            }
+            .prompt-text22 {
+                display: block;
+            }
+            .prompt-text3 {
+                display: none;
+            }
+            /* 使命与愿景标题 */
+            .except1 {
+                display: none;
+            }
+            .except2 {
+                display: block;
+            }
+            /* 使命与愿景介绍 */
+            .advantages1 {
+                display: none;
+            }
+            .advantages2 {
+                display: block;
+            }
+            .advantages3 {
+                display: none;
+            }
+            .advantages4 {
+                display: block;
+            }
+            /* 底部 */
+            .black-bottom1 {
+                display: block;
+            }
+            .black-bottom2 {
+                display: none;
+            }
+        }
+        
+        @media screen and (max-width: 649px) and (min-width: 550px) {
+            .wrapper {
+                display: none;
+            }
+            .btn1 {
+                display: block;
+                margin-left: 350px;
+                margin-top: -43px;
+            }
+            .img-logo {
+                margin-right: 0px;
+                margin-left: 15px;
+            }
+            /* 响应式图片+内联表单  */
+            .banner-text1 {
+                display: none;
+            }
+            .banner-text2 {
+                display: block;
+            }
+            /* .form-inline {
+                width: 150px;
+                margin-left: 150px;
+            }
+            #imgPosition2 {
+                width: 20px;
+            } */
+            /* 接送 */
+            .ve-trans1 {
+                display: none;
+            }
+            .ve-trans2 {
+                display: block;
+            }
+            /* 热门线路标题 */
+            .routes1 {
+                display: none;
+            }
+            .routes2 {
+                display: block;
+            }
+            /* 热门线路介绍 */
+            .prompt-text1 {
+                display: none;
+            }
+            .prompt-text11 {
+                display: block;
+            }
+            .prompt-text22 {
+                display: none;
+            }
+            .prompt-text3 {
+                display: block;
+            }
+            /* 使命与愿景标题 */
+            .except1 {
+                display: none;
+            }
+            .except2 {
+                display: block;
+            }
+            /* 使命与愿景介绍 */
+            .advantages1 {
+                display: none;
+            }
+            .advantages2 {
+                display: block;
+            }
+            .advantages3 {
+                display: none;
+            }
+            .advantages4 {
+                display: block;
+            }
+            /* 底部 */
+            .black-bottom1 {
+                display: block;
+            }
+            .black-bottom2 {
+                display: none;
+            }
+        }
+        
+        @media screen and (max-width:549px) {
+            .wrapper {
+                display: none;
+            }
+            .btn1 {
+                display: block;
+                margin-left: 280px;
+                margin-top: -43px;
+            }
+            .img-logo {
+                margin-right: 0px;
+                margin-left: 15px;
+            }
+            /* 响应式图片+内联表单  */
+            .banner-text1 {
+                display: none;
+            }
+            .banner-text2 {
+                display: block;
+            }
+            /* .form-inline {
+                width: 80px;
+                margin-left: 80px;
+            }
+            #imgPosition2 {
+                width: 20px;
+            } */
+            /* 接送 */
+            .ve-trans1 {
+                display: none;
+            }
+            .ve-trans2 {
+                display: block;
+            }
+            /* 热门线路标题 */
+            .routes1 {
+                display: none;
+            }
+            .routes2 {
+                display: block;
+            }
+            /* 热门线路介绍 */
+            .prompt-text1 {
+                display: none;
+            }
+            .prompt-text11 {
+                display: block;
+            }
+            .prompt-text22 {
+                display: none;
+            }
+            .prompt-text3 {
+                display: block;
+            }
+            /* 使命与愿景标题 */
+            .except1 {
+                display: none;
+            }
+            .except2 {
+                display: block;
+            }
+            /* 使命与愿景介绍 */
+            .advantages1 {
+                display: none;
+            }
+            .advantages2 {
+                display: block;
+            }
+            .advantages3 {
+                display: none;
+            }
+            .advantages4 {
+                display: block;
+            }
+            /* 底部 */
+            .black-bottom1 {
+                display: block;
+            }
+            .black-bottom2 {
+                display: none;
+            }
+        }
+        /* 响应式图片+内联表单  */
+        
+        .banner-text1 {
+            color: rgb(224, 224, 224);
+            position: absolute;
+            margin-top: -25%;
+            margin-left: 15%;
+        }
+        
+        .banner-text2 {
+            color: rgb(224, 224, 224);
+            position: absolute;
+            margin-top: -33%;
+            margin-left: 5%;
+        }
+        
+        .formSearch {
+            width: auto;
+            border: 0px solid lightgrey;
+            border-radius: 5px;
+            position: relative;
+            margin-top: -5%;
+            margin-left: 30%;
+            height: 32px;
+            background-color: rgb(211, 211, 216);
+        }
+        
+        #imgPosition1 {
+            display: inline-block;
+            margin-left: 0;
+            text-align: center;
+            width: 100px;
+            height: 30px;
+        }
+        
+        #imgPosition2 {
+            display: inline-block;
+            text-align: center;
+            width: 80px;
+            height: 30px;
+            margin-left: 61%;
+            margin-top: -50%;
+            background-color: rgb(232, 66, 10);
+        }
+        
+        .formPosition {
+            width: 200px;
+            margin-left: 20%;
+        }
+        /* 接送 */
+        
+        #ve-car {
+            text-align: center;
+            color: whitesmoke;
+            margin-left: -15px;
+            background-color: rgb(20, 49, 109);
+            height: 292px;
+        }
+        /* 热门路线标题 */
+        
+        .routes1 {
+            text-align: center;
+        }
+        /* 热门线路介绍 */
+        
+        .prompt-text1 {
+            height: 60px;
+            width: auto;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            padding-top: 2%;
+            padding-left: 10%;
+        }
+        
+        .prompt-text11 {
+            position: relative;
+            height: 60px;
+            width: auto;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            padding-top: 2%;
+            margin: -13% 0 0 0;
+        }
+        
+        .prompt-text2 {
+            position: relative;
+            height: 60px;
+            width: auto;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: rgb(255, 255, 255);
+            padding-top: 2%;
+            margin-top: -13%;
+            padding-left: 10%;
+        }
+        
+        .prompt-text3 {
+            text-align: center;
+            padding-top: 5%;
+            padding-bottom: 3%;
+        }
+        
+        .btn-lg {
+            font-size: 25px;
+            color: rgb(143, 143, 143);
+        }
+        /* 使命与愿景标题 */
+        
+        .except1 {
+            text-align: center;
+        }
+        /* 使命与愿景介绍 */
+        
+        .advantages1 {
+            background-color: rgb(27, 77, 123);
+            text-align: center;
+            margin-left: -1.5%;
+            height: 258px;
+            color: white;
+            padding-top: 30px;
+        }
+        
+        .icon1 {
+            text-align: center;
+            color: white;
+        }
+        
+        .icons {
+            position: relative;
+            margin-top: -130px;
+        }
+        
+        .rorates {
+            padding-left: 50px;
+            padding-top: 30px;
+        }
+        
+        .black-bottom1 {
+            background-color: rgb(52, 50, 53);
+            text-align: center;
+            color: whitesmoke;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            font-size: 12px;
+            margin-top: 30px;
+        }
+        
+        .black-bottom2 {
+            background-color: rgb(52, 50, 53);
+            text-align: center;
+            color: whitesmoke;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="background-image: url('img/back.png'); background-color: rgb(221, 221, 221); padding: 0;">
+        <!-- PC端顶部黑色导航条 -->
+        <div class="wrapper">
+            <div class="sub">
+                <div class="sub1"><img src="img/tell.png" alt=""></div>
+                <div class="sub2">
+                    <p>400-808-8682</p>
+                </div>
+                <div class="sub3"><a href="#" style="color: lightgrey; font-size: 11px;text-decoration: none;">请登录</a></div>
+                <div class="sub4" style="color: lightgrey;">|</div>
+                <div class="sub5"><a href="#" style="color: lightgrey; font-size: 11px; text-decoration: none;">注册</a></div>
+            </div>
+        </div>
+        <!-- 导航栏 -->
+        <nav class="navbar navbar-default" style="margin-bottom: 0;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-1">
+                            <span class="sr-only">导航开关</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    <a href="#" class="img-logo"><img src="img/logo.png" alt=""></a>
+                    <button type="button" class="btn btn-danger btn1">快速定制</button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-1">
+                    <ul class="nav navbar-nav bs">
+                        <li><a href="#" id="bsa1">首页</a></li>
+                        <li><a href="#" id="bsa2">热门路线</a></li>
+                        <li><a href="#" id="bsa3">签证推荐</a></li>
+                        <li><a href="#" id="bsa4">使命愿景</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- 响应式图片+内联表单 -->
+        <div class="banner">
+            <img src="img/banner.jpg" alt="" class="img-responsive">
+            <div class="banner-text1">
+                <h1 style="padding-bottom: 3%;">悠游古欧洲&nbsp;&nbsp;遍览德法瑞意</h1>
+                <span style="border-top: 1px solid rgb(87,86,90);padding: 2% 0 2% 0;">巴黎卢浮宫、塞纳河游船、凡尔赛宫</span><br/>
+                <span style="border-bottom: 1px solid rgb(87,86,90);padding: 2% 0 2% 0;">少女峰、大运河游船、金色列车、西庸城堡</span>
+            </div>
+            <div class="banner-text2">
+                <h3 style="padding-bottom: 1%;">悠游古欧洲&nbsp;&nbsp;遍览德法瑞意</h3>
+                <h4 style="padding: 2% 0 2% 0;">全程升级热早+1晚5星酒店</h4>
+
+            </div>
+            <div class="formSearch">
+                <span id="imgPosition1"><img src="img/position.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;目的地</span>
+                <form class="form-inline formPosition">
+                    <input type="text" class="form-control" placeholder=" |  日本  美国  英国  地中海">
+                </form>
+                <span id="imgPosition2">
+                    <a href="#"><img src="img/search.png" alt=""></a>
+                </span>
+            </div>
+        </div>
+        <!-- 接送 -->
+        <div class="ve-trans1">
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-md-8 col-md-offset-1">
+                    <img src="img/Sbanner2.jpg" alt="" class="img-responsive">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-7" style="margin-top: -280px; color: whitesmoke;">
+                            <h2>机场接送 省钱省心</h2>
+                            提供上海、苏州、无锡各市<br/> 往返机场、码头接送服务，更有包车服务
+                            <br/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2" id="ve-car">
+                    <div class="row">
+                        <div class="col-xs-12" style="margin-top: 50px;margin-left: 35px;"><img src="img/car.png" alt="" class="car1 img-responsive"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <h3>车辆接送</h3>
+                    </div>
+                    <div class="col-xs-12" style="margin-top: 30px;"><button type="button" class="btn btn-default btn-lg" style="background-color: rgb(20,49,109);color:whitesmoke">查看详情</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="ve-trans2" style="margin-top: 20px;">
+            <div class="row">
+                <div class="col-xs-2" style="margin-top: 20px;">
+                    <img src="img/carH.png" alt="" class="img-responsive">
+                </div>
+                <div class="col-xs-7">
+                    <h3 style="color: rgb(28,80,128);">机场接送 省钱省心</h3>
+                    提供上海、苏州、无锡各市
+                    <br/> 往返机场、码头接送服务，更有包车服务
+                    <br/>
+                </div>
+                <div class="col-xs-2" style="margin-top: 40px; margin-left: -30px;">
+                    <button type="button" class="btn btn-default btn-sm">查看详情</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 热门路线标题-->
+        <div class="routes1" style="margin-bottom:20px ;">
+            <h3>热门线路</h3>
+            Popular tourist routes
+        </div>
+        <div class="routes2" style="margin-bottom:20px ;">
+            <div class="row">
+                <div class="col-xs-5">
+                    <h3 style="border-left:3px solid red;">&nbsp;&nbsp;热门线路</h3>
+                </div>
+            </div>
+        </div>
+        <!-- 热门线路介绍 -->
+        <div class="route-introduce">
+            <div class="row">
+                <div class="col-md-5 col-md-offset-1">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="img/hot1.jpg" alt="" class="img-responsive">
+                            <div class="prompt-text1">
+                                海南三亚5天4晚，纯玩、4晚红树林度假王国<br/>
+                                <span>￥
+                                    <span class="lead">2580 </span>/&nbsp;人起</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row prompt-text11">
+                                <div class="col-xs-6">
+                                    海南三亚5天4晚<br/> 纯玩、4晚红树林度假王国
+                                    <br/>
+                                </div>
+                                <div class="col-xs-4 col-xs-offset-2">
+                                    <span>￥
+                                        <span class="lead">2580 </span>/&nbsp;人起</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="img/hot2.jpg" alt="" class="img-responsive">
+                            <div class="prompt-text1">
+                                德法意瑞欧洲4国，ABCD任意线路由您挑选<br/>
+                                <span>￥
+                                        <span class="lead">7999 </span>/&nbsp;人起</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row prompt-text11">
+                                <div class="col-xs-6">
+                                    德法意瑞欧洲4国<br/> ABCD任意线路由您挑选
+                                    <br/>
+                                </div>
+                                <div class="col-xs-4 col-xs-offset-2">
+                                    <span>￥
+                                        <span class="lead">7999 </span>/&nbsp;人起</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 prompt-text3">
+                            <button type="button" class="btn btn-default btn-lg">查看详情&nbsp;&nbsp;<img src="img/hotR.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-12 prompt-text22">
+                            <img src="img/hot3.jpg" alt="" class="img-responsive">
+                            <div class="prompt-text2">
+                                曼谷+芭提雅&nbsp;国际五星，赠送2220大礼包，绝无自费<br/>
+                                <span>￥
+                                        <span class="lead">2799 </span>/&nbsp;人起</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 prompt-text22">
+                            <img src="img/hot4.jpg" alt="" class="img-responsive">
+                            <div class="prompt-text2">
+                                日本本州游&nbsp;樱花、寿司、温泉、美食<br/>
+                                <span>￥
+                                        <span class="lead">5399 </span>/&nbsp;人起</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 prompt-text22">
+                            <img src="img/hot5.jpg" alt="" class="img-responsive">
+                            <div class="prompt-text2">
+                                斯里兰卡7天6晚全景游&nbsp;&nbsp;保证入住2晚香格里拉<br/>
+                                <span>￥
+                                        <span class="lead">7999 </span>/&nbsp;人起</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 使命与愿景标题 -->
+        <div class="except1" style="margin-bottom:20px ;">
+            <h3>使命与愿景</h3>
+            让旅游回归本质，体验纯粹旅游
+        </div>
+        <div class="except2" style="margin-bottom:20px ;">
+            <div class="row">
+                <div class="col-xs-10">
+                    <span class="lead" style="border-left:3px solid red;font-size: 24px; font-weight: 500;font-family: inherit;">&nbsp;&nbsp;使命与愿景:</span>&nbsp;&nbsp;让旅游回归本质,体验纯粹旅游
+                </div>
+            </div>
+        </div>
+        <!-- 使命与愿景介绍 -->
+        <div class="res-expect">
+            <div class="row" style="margin-bottom: 5px;">
+                <div class="col-md-4 col-md-offset-1">
+                    <img src="img/mission1.jpg" alt="" class="img-responsive">
+                </div>
+                <div class="col-md-6 advantages1">
+                    <h4>服务理念及优势</h4>
+                    <div style="text-align: left;margin-left: 10%;">
+                        “英华逸游”通过重新打造旅游全过程中的产品线路设计、出行交通方案、<br/> 陪游向导服务、增值关怀项目等，为顾客提供高品质的旅游体验。英华逸
+                        <br/> 游在泰国、欧洲、等多个国家拥有丰富的旅游资源，同时致力于给用户提
+                        <br/> 供性价比高的产品和服务。
+                        <br/>
+                    </div>
+                </div>
+                <div class="col-xs-10 col-xs-offset-1 advantages2" style="margin-top: 20px; margin-left: 15px;margin-bottom: 10px;">
+                    <h4 style="text-align: center;">--服务理念--</h4>
+                    “英华逸游”通过重新打造旅游全过程中的产品线路设计、出行交通方<br/> 案、陪游向导服务、增值关怀项目等，为顾客提供高品质的旅游体验
+                    <br/> 。英华逸游在泰国、欧洲、等多个国家拥有丰富的旅游资源，同时致
+                    <br/> 力于给用户提供性价比高的产品和服务。
+                    <br/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <img src="img/mission2.jpg" alt="" class="img-responsive">
+                <div class="advantages3" style="background-color: rgb(28,80,128);margin-top: 5px;padding-bottom: 30px;">
+                    <div class="row">
+                        <div class="col-md-4 icon1">
+                            <div class="row">
+                                <ul class="col-md-12" style="list-style: none;">
+                                    <li class="rorates"><img src="img/rorate.png" alt="" class="img-responsive"></li>
+                                    <li class="icons"><img src="img/icon1.png" alt="" class="img-rsponsive"></li>
+                                    <li class="texts">
+                                        <h5>品质行程</h5>
+                                    </li>
+                                </ul>
+                                <div class="col-md-12" style="margin-top: 50px; font-size: 12px;">
+                                    旅游达人精心设计、基于口碑反复打磨，<br/> 全网最好，敢跟任何产品比
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 icon1">
+                            <div class="row">
+                                <ul class="col-md-12" style="list-style: none;">
+                                    <li class="rorates"><img src="img/rorate.png" alt="" class="img-responsive"></li>
+                                    <li class="icons"><img src="img/icon2.png" alt="" class="img-rsponsive"></li>
+                                    <li class="texts">
+                                        <h5>品质消费</h5>
+                                    </li>
+                                </ul>
+                                <div class="col-md-12" style="margin-top: 40px;font-size: 12px;">
+                                    不推自费，<br/> 不进垃圾购物店和伪景点
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 icon1">
+                            <div class="row">
+                                <ul class="col-md-12" style="list-style: none;">
+                                    <li class="rorates"><img src="img/rorate.png" alt="" class="img-responsive"></li>
+                                    <li class="icons"><img src="img/icon3.png" alt="" class="img-rsponsive"></li>
+                                    <li class="texts">
+                                        <h5>品质小团</h5>
+                                    </li>
+                                </ul>
+                                <div class="col-md-12" style="margin-top: 50px; font-size: 12px;">
+                                    独立成团不散拼，<br/> 只跟亲朋好友一起玩，每天发团
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 advantages4">
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <h4 style="text-align: center;">--服务理念--</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <div class="row" style="border-bottom: 0.5px solid rgb(143, 143, 143); height: 100px; text-align: center; padding-top: 20px;">
+                            <div class="col-xs-4">
+                                <img src="img/icon11.png" alt="">
+                            </div>
+                            <div class="col-xs-8" style="font-size: 12px; text-align: left;">
+                                旅游达人精心设计、基于口碑反复打磨，<br/> 告别人山人海鸡肋景点。
+                                <br/> 全网最好，敢跟任何产品比
+                            </div>
+                        </div>
+
+                        <div class="row" style="border-bottom:0.5px solid rgb(143, 143, 143); height: 100px; text-align: center; padding-top: 20px;">
+                            <div class="col-xs-4">
+                                <img src="img/icon22.png" alt="">
+                            </div>
+                            <div class="col-xs-8" style="font-size: 12px; text-align: left;padding-top: 10px;">
+                                不推自费，<br/> 不进垃圾购物店和伪景点
+                                <br/>
+                            </div>
+                        </div>
+                        <div class="row" style="border-bottom:0.5px solid rgb(143, 143, 143); height: 100px; text-align: center; padding-top: 20px;">
+                            <div class="col-xs-4">
+                                <img src="img/icon33.png" alt="">
+                            </div>
+                            <div class="col-xs-8" style="font-size: 12px;text-align: left;padding-top: 10px;">
+                                独立成团不散拼，<br/> 只跟亲朋好友一起玩，每天发团
+                                <br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部 -->
+
+        <div class="row black-bottom1" style="margin-right: 0 ;">
+            <div class="col-xs-12">
+                苏ICP备号、2020 <br/> @苏州英华国际旅游有限公司版权所有
+                <br/> 技术支持&nbsp;杭州支持
+            </div>
+        </div>
+        <div class="black-bottom2 row" style="margin-right:0; margin-left:0;">
+            <div class="col-md-12" style="border-bottom: 1px solid rgb(64,64,64);">
+                <div class="row" style="margin-bottom: 20px;">
+                    <div class="col-md-1 col-md-offset-1" style="font-size: 14px;">
+                        合作伙伴
+                    </div>
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="img/xiecheng.png" alt="">
+                                <span>携程网</span>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="img/feizhu.png" alt="">
+                                <span>阿里飞猪</span>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="img/quna.png" alt="">
+                                <span>去哪儿</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 20px;">
+                    <div class="col-md-1 col-md-offset-1" style="font-size: 14px;">
+                        热门位置
+                    </div>
+                    <div class="col-md-9" style="text-align: left; font-size: 11px;">
+                        韩国&nbsp;&nbsp;&nbsp;&nbsp;日本&nbsp;&nbsp;&nbsp;&nbsp;菲律宾&nbsp;&nbsp;&nbsp;&nbsp;越南&nbsp;&nbsp;&nbsp;&nbsp;老挝&nbsp;&nbsp;&nbsp;&nbsp;柬埔寨&nbsp;&nbsp;&nbsp;&nbsp;泰国&nbsp;&nbsp;&nbsp;&nbsp;马来西亚&nbsp;&nbsp;&nbsp;&nbsp;新加坡&nbsp;&nbsp;&nbsp;&nbsp;印度尼西亚&nbsp;&nbsp;&nbsp;&nbsp;印度&nbsp;&nbsp;&nbsp;&nbsp;斯里兰卡&nbsp;&nbsp;&nbsp;&nbsp;土耳其&nbsp;&nbsp;&nbsp;&nbsp;阿联酋&nbsp;&nbsp;&nbsp;&nbsp;西班牙&nbsp;&nbsp;&nbsp;&nbsp;意大利&nbsp;&nbsp;&nbsp;&nbsp;希腊&nbsp;&nbsp;&nbsp;&nbsp;法国&nbsp;&nbsp;&nbsp;&nbsp;比利时&nbsp;&nbsp;&nbsp;&nbsp;荷兰<br/>                        英国&nbsp;&nbsp;&nbsp;&nbsp;瑞士&nbsp;&nbsp;&nbsp;&nbsp;奥地利&nbsp;&nbsp;&nbsp;&nbsp;匈牙利&nbsp;&nbsp;&nbsp;&nbsp;俄罗斯&nbsp;&nbsp;&nbsp;&nbsp;捷克&nbsp;&nbsp;&nbsp;&nbsp;芬兰&nbsp;&nbsp;&nbsp;&nbsp;葡萄牙&nbsp;&nbsp;&nbsp;&nbsp;冰岛&nbsp;&nbsp;&nbsp;&nbsp;美国&nbsp;&nbsp;&nbsp;&nbsp;加拿大&nbsp;&nbsp;&nbsp;&nbsp;巴西&nbsp;&nbsp;&nbsp;&nbsp;阿根廷&nbsp;&nbsp;&nbsp;&nbsp;澳大利亚&nbsp;&nbsp;&nbsp;&nbsp;新西兰
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 20px;">
+                    <div class="col-md-1 col-md-offset-1" style="font-size: 14px;">
+                        主题服务
+                    </div>
+                    <div class="col-md-9" style="text-align: left; font-size: 11px;">
+                        海岛度假&nbsp;&nbsp;&nbsp;&nbsp;历史文化&nbsp;&nbsp;&nbsp;&nbsp;探索冒险&nbsp;&nbsp;&nbsp;&nbsp;美食购物&nbsp;&nbsp;&nbsp;&nbsp;都市生活&nbsp;&nbsp;&nbsp;&nbsp;海外游学&nbsp;&nbsp;&nbsp;&nbsp;邮轮度假&nbsp;&nbsp;&nbsp;&nbsp;蜜月摄影&nbsp;&nbsp;&nbsp;&nbsp;亲子乐园
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 20px;">
+                    <div class="col-md-1 col-md-offset-1" style="font-size: 14px;">
+                        友情链接
+                    </div>
+                    <div class="col-md-9" style="text-align: left; font-size: 11px;">
+                        马蜂窝&nbsp;&nbsp;&nbsp;&nbsp;穷游&nbsp;&nbsp;&nbsp;&nbsp;booking&nbsp;&nbsp;&nbsp;&nbsp;苏州旅游局&nbsp;&nbsp;&nbsp;&nbsp;驴友网&nbsp;&nbsp;&nbsp;&nbsp;吾爱全球签证中心&nbsp;&nbsp;&nbsp;&nbsp;酒店团购&nbsp;&nbsp;&nbsp;&nbsp;携程旅游攻略&nbsp;&nbsp;&nbsp;&nbsp;天巡职航在线&nbsp;&nbsp;&nbsp;&nbsp;满天飞旅游网&nbsp;&nbsp;&nbsp;&nbsp;中国旅游网&nbsp;&nbsp;&nbsp;&nbsp;澳乐网&nbsp;&nbsp;&nbsp;&nbsp;背包兔旅游行程<br/>                        出境旅游&nbsp;&nbsp;&nbsp;&nbsp;国际酒店&nbsp;&nbsp;&nbsp;&nbsp;广州旅行社&nbsp;&nbsp;&nbsp;&nbsp;出境旅游&nbsp;&nbsp;&nbsp;&nbsp;517旅行&nbsp;&nbsp;&nbsp;&nbsp;花生游&nbsp;&nbsp;&nbsp;&nbsp;家园网&nbsp;&nbsp;&nbsp;&nbsp;海外婚礼
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12" style="text-align: center;padding-top: 30px;">
+                2020&nbsp;&nbsp;@苏州英华国际旅游有限公司版权所有
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
