@@ -98,13 +98,12 @@
             .banner-text2 {
                 display: none;
             }
-            /* .form-inline {
-                width: 300px;
-                margin-left: 380px;
+            .formSearch1 {
+                display: block;
             }
-            #imgPosition2 {
-                width: 60px;
-            } */
+            .formSearch2 {
+                display: none;
+            }
             /* 接送 */
             .ve-trans1 {
                 display: block;
@@ -184,13 +183,12 @@
             .banner-text2 {
                 display: none;
             }
-            /* .form-inline {
-                width: 250px;
-                margin-left: 250px;
+            .formSearch1 {
+                display: block;
             }
-            #imgPosition2 {
-                width: 40px;
-            } */
+            .formSearch2 {
+                display: none;
+            }
             /* 接送 */
             .ve-trans1 {
                 display: none;
@@ -267,13 +265,12 @@
             .banner-text2 {
                 display: none;
             }
-            /* .formSearch {
-                width: 200px;
-                margin-left: 200px;
+            .formSearch1 {
+                display: block;
             }
-            #imgPosition2 {
-                width: 30px;
-            } */
+            .formSearch2 {
+                display: none;
+            }
             /* 接送 */
             .ve-trans1 {
                 display: none;
@@ -350,13 +347,12 @@
             .banner-text2 {
                 display: block;
             }
-            /* .form-inline {
-                width: 150px;
-                margin-left: 150px;
+            .formSearch1 {
+                display: none;
             }
-            #imgPosition2 {
-                width: 20px;
-            } */
+            .formSearch2 {
+                display: block;
+            }
             /* 接送 */
             .ve-trans1 {
                 display: none;
@@ -433,13 +429,12 @@
             .banner-text2 {
                 display: block;
             }
-            /* .form-inline {
-                width: 80px;
-                margin-left: 80px;
+            .formSearch1 {
+                display: none;
             }
-            #imgPosition2 {
-                width: 20px;
-            } */
+            .formSearch2 {
+                display: block;
+            }
             /* 接送 */
             .ve-trans1 {
                 display: none;
@@ -510,39 +505,78 @@
             margin-top: -33%;
             margin-left: 5%;
         }
-        
-        .formSearch {
-            width: auto;
-            border: 0px solid lightgrey;
-            border-radius: 5px;
-            position: relative;
-            margin-top: -5%;
-            margin-left: 30%;
-            height: 32px;
-            background-color: rgb(211, 211, 216);
-        }
+        /* PC端 */
         
         #imgPosition1 {
+            position: absolute;
             display: inline-block;
-            margin-left: 0;
+            margin-left: 30%;
+            margin-top: -5%;
+            padding-top: 3px;
             text-align: center;
-            width: 100px;
-            height: 30px;
+            width: 101px;
+            height: 34px;
+            background-color: rgb(211, 211, 216);
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
         }
         
         #imgPosition2 {
+            position: absolute;
             display: inline-block;
             text-align: center;
             width: 80px;
-            height: 30px;
-            margin-left: 61%;
-            margin-top: -50%;
+            height: 34px;
+            margin-left: 54%;
+            margin-top: -5%;
+            padding-top: 1px;
             background-color: rgb(232, 66, 10);
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
         }
         
-        .formPosition {
+        .formPosition1 {
+            position: absolute;
             width: 200px;
-            margin-left: 20%;
+            margin-left: 38%;
+            margin-top: -5%;
+        }
+        /* 手机端 */
+        
+        #imgPosition3 {
+            position: absolute;
+            display: inline-block;
+            margin-left: 15%;
+            margin-top: -10%;
+            padding-top: 3px;
+            text-align: center;
+            width: 100px;
+            height: 34px;
+            background-color: rgb(211, 211, 216);
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        
+        #imgPosition4 {
+            position: absolute;
+            display: inline-block;
+            text-align: center;
+            width: 50px;
+            height: 34px;
+            margin-left: 76%;
+            margin-top: -10%;
+            padding-top: 1px;
+            background-color: rgb(232, 66, 10);
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        
+        .formPosition2 {
+            position: absolute;
+            width: 200px;
+            height: 34px;
+            margin-left: 35%;
+            margin-top: -10%;
         }
         /* 接送 */
         
@@ -613,6 +647,13 @@
             margin-left: -1.5%;
             height: 258px;
             color: white;
+            padding-top: 30px;
+        }
+        
+        .advantages2 {
+            text-align: center;
+            height: 200px;
+            line-height: 30px;
             padding-top: 30px;
         }
         
@@ -702,13 +743,22 @@
                 <h4 style="padding: 2% 0 2% 0;">全程升级热早+1晚5星酒店</h4>
 
             </div>
-            <div class="formSearch">
+            <div class="formSearch1">
                 <span id="imgPosition1"><img src="img/position.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;目的地</span>
-                <form class="form-inline formPosition">
+                <form class="form-inline formPosition1">
                     <input type="text" class="form-control" placeholder=" |  日本  美国  英国  地中海">
                 </form>
                 <span id="imgPosition2">
-                    <a href="#"><img src="img/search.png" alt=""></a>
+                    <img src="img/search.png" alt="" >
+                </span>
+            </div>
+            <div class="formSearch2">
+                <span id="imgPosition3"><img src="img/position.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;目的地</span>
+                <form class="form-inline formPosition2">
+                    <input type="text" class="form-control" placeholder=" |  日本  美国  英国  地中海">
+                </form>
+                <span id="imgPosition4">
+                    <img src="img/search.png" alt="">
                 </span>
             </div>
         </div>
@@ -873,12 +923,14 @@
                         <br/>
                     </div>
                 </div>
-                <div class="col-xs-10 col-xs-offset-1 advantages2" style="margin-top: 20px; margin-left: 15px;margin-bottom: 10px;">
-                    <h4 style="text-align: center;">--服务理念--</h4>
-                    “英华逸游”通过重新打造旅游全过程中的产品线路设计、出行交通方<br/> 案、陪游向导服务、增值关怀项目等，为顾客提供高品质的旅游体验
-                    <br/> 。英华逸游在泰国、欧洲、等多个国家拥有丰富的旅游资源，同时致
-                    <br/> 力于给用户提供性价比高的产品和服务。
-                    <br/>
+                <div class="col-xs-10 col-xs-offset-1 advantages2">
+                    <h4>--服务理念--</h4>
+                    <div style="text-align: left;margin-left: 1%;font-size: 13px;">
+                        “英华逸游”通过重新打造旅游全过程中的产品线路设计、出行交通方<br/> 案、陪游向导服务、增值关怀项目等，为顾客提供高品质的旅游体验
+                        <br/> 。英华逸游在泰国、欧洲、等多个国家拥有丰富的旅游资源，同时致
+                        <br/> 力于给用户提供性价比高的产品和服务。
+                        <br/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -935,7 +987,7 @@
             <div class="col-md-6 advantages4">
                 <div class="row">
                     <div class="col-xs-10 col-xs-offset-1">
-                        <h4 style="text-align: center;">--服务理念--</h4>
+                        <h4 style="text-align: center;">--服务优势--</h4>
                     </div>
                 </div>
                 <div class="row">
